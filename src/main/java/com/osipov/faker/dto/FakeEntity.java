@@ -7,6 +7,6 @@ import lombok.Data;
 @Builder
 public class FakeEntity {
     private String name;
-    private String title;
+    private String profession;
     private Integer number;
 }
