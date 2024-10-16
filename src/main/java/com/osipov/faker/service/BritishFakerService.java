@@ -22,7 +22,7 @@ public class BritishFakerService implements FakerService {
 
         return FakeEntity.builder()
                 .name(name.name())
-                .profession(name.title())
+                .position(name.title())
                 .number(faker.number().numberBetween(10, 1_000_000))
                 .build();
     }
