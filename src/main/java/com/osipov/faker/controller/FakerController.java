@@ -1,6 +1,6 @@
 package com.osipov.faker.controller;
 
-import com.osipov.faker.dto.FakeEntity;
+import com.osipov.faker.dto.FakeHuman;
 import com.osipov.faker.service.FakerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -15,7 +15,7 @@ public class FakerController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public FakeEntity createFakeEntity() {
-        return fakerService.createFake();
+    public FakeHuman createFakeEntity() {
+        return fakerService.createFakeHuman();
     }
 }

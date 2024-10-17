@@ -1,7 +1,7 @@
 package com.osipov.faker.service;
 
 import com.github.javafaker.Faker;
-import com.osipov.faker.dto.FakeEntity;
+import com.osipov.faker.dto.FakeHuman;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Lazy;
@@ -17,10 +17,10 @@ public class BritishFakerService implements FakerService {
     }
 
     @Override
-    public FakeEntity createFake() {
+    public FakeHuman createFakeHuman() {
         var name = faker.name();
 
-        return FakeEntity.builder()
+        return FakeHuman.builder()
                 .name(name.name())
                 .position(name.title())
                 .phoneNumber(faker.phoneNumber().phoneNumber())
