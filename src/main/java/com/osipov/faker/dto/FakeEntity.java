@@ -8,5 +8,5 @@ import lombok.Data;
 public class FakeEntity {
     private String name;
     private String position;
-    private Integer number;
+    private String phoneNumber;
 }
