@@ -16,7 +16,4 @@ public class FakeHuman {
     private String company;
     private String position;
     private LocalDate birthDate;
-
-    private FakeHuman() {
-    }
 }

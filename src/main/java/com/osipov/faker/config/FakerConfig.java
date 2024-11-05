@@ -11,87 +11,87 @@ import java.util.Locale;
 @Configuration
 public class FakerConfig {
 
-    @Bean
+    @Bean("ru")
     public Faker russianFaker() {
         return new Faker(Locale.of("ru"));
     }
 
-    @Bean
+    @Bean("en")
     public Faker usaFaker() {
         return new Faker(Locale.US);
     }
 
-    @Bean
+    @Bean("en-GB")
     public Faker britishFaker() {
-        return new Faker(Locale.of("en", "GB"));
+        return new Faker(Locale.UK);
     }
 
-    @Bean
+    @Bean("fr")
     public Faker frenchFaker() {
         return new Faker(Locale.FRANCE);
     }
 
-    @Bean
+    @Bean("de")
     public Faker deutschFaker() {
         return new Faker(Locale.GERMANY);
     }
 
-    @Bean
+    @Bean("it")
     public Faker italianFaker() {
         return new Faker(Locale.ITALY);
     }
 
-    @Bean
+    @Bean("es")
     public Faker spanishFaker() {
         return new Faker(Locale.of("es"));
     }
 
-    @Bean
+    @Bean("pt")
     public Faker portugueseFaker() {
         return new Faker(Locale.of("pt"));
     }
 
-    @Bean
+    @Bean("pl")
     public Faker polishFaker() {
         return new Faker(Locale.of("pl"));
     }
 
-    @Bean
+    @Bean("sv")
     public Faker swedishFaker() {
         return new Faker(Locale.of("sv"));
     }
 
-    @Bean
+    @Bean("no")
     public Faker norwegianFaker() {
         return new Faker(Locale.of("no"));
     }
 
-    @Bean
+    @Bean("ar")
     public Faker arabicFaker() {
         return new Faker(Locale.of("ar"));
     }
 
-    @Bean
+    @Bean("tr")
     public Faker turkishFaker() {
         return new Faker(Locale.of("tr"));
     }
 
-    @Bean
+    @Bean("ja")
     public Faker japaneseFaker() {
         return new Faker(Locale.JAPANESE);
     }
 
-    @Bean
+    @Bean("ko")
     public Faker koreanFaker() {
         return new Faker(Locale.KOREA);
     }
 
-    @Bean
+    @Bean("zh")
     public Faker chineeseFaker() {
         return new Faker(Locale.CHINA);
     }
 
-    @Bean
+    @Bean("he")
     public Faker hebrewFaker() {
         return new Faker(Locale.of("he"));
     }
